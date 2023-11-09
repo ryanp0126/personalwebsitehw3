@@ -31,13 +31,31 @@
         </header>
     </div>
     <main>
-        <svg></svg>
-        <span lang="ja">こんにちは、世界</span>
         <h1>Ryan's Website</h1> 
         <p>Hi! I'm a student majoring in <strong>Computer Engineering</strong> in the <i>ECE</i> department at UCSD. This is my <em>personal</em> website.</p>
         <aside>
             <p>Lookin for a job</p>
         </aside>
+        <h2>Latest Posts</h2>
+        <div class="container">
+            <div class="box">Article1</div>
+            <div class="box">Article2</div>
+            <div class="box">Article3</div>
+        </div>
+        <details>
+            <summary>Why are there no articles?</summary>
+            The articles are not written yet.
+        </details>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Summary of my <code>projects</code></p>
+            <ol>
+                <li>Social Compass</li>
+                <li>AI for games</li>
+            </ol>
+        </section>
+
         <section id="Links">
             <h2>Useful Links</h2>
             <a href="http://canvas.ucsd.edu">Canvas</a>
@@ -49,7 +67,8 @@
         <b>My fav bear</b>
         <div class="img">
             <picture>
-                <img src="images/bear.png" alt="Warren Bear" height="430" width="700">
+                <source srcset="images/bear.png" alt="Warren Bear" height="430" width="700" media="(min-width:600px)">
+                <img src="images/bear.png" height="300" width="400" alt="bear"/>
             </picture>
         </div>
         <figure>
@@ -74,28 +93,7 @@
             ctx.fillStyle = "#FF0000";
             ctx.fillRect(0, 0, 80, 80);
             </script>
-        <section id="Posts">
-            <h2>Latest Posts</h2>
-            <ol>
-                <li>Article1</li>
-                <li>Article2</li>
-            </ol>
-            
-        </section>
-        <details>
-            <summary>Why are there no articles?</summary>
-            The articles are not written yet.
-        </details>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Summary of my <code>projects</code></p>
-            <ol>
-                <li>Social Compass</li>
-                <li>AI for games</li>
-            </ol>
-
-            
-        </section>
+        
     </main>
 
     <table>
